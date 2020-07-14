@@ -22,7 +22,7 @@ namespace GitHubRepo.ContentUtility.Operations
         /// <param name="appConfig">The application configuration object which contains values
         /// for connecting to the specified GitHub repository.</param>
         /// <param name="privateKey"> The RSA private key of a registered GitHub app installed in the specified repository.</param>
-        /// <returns></returns>
+        /// <returns>A task.</returns>
         public async Task WriteToRepositoryAsync(ApplicationConfig appConfig, string privateKey)
         {
             if (appConfig == null)

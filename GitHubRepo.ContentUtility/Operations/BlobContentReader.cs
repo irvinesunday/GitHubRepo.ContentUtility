@@ -22,7 +22,7 @@ namespace GitHubRepo.ContentUtility.Operations
         /// <param name="appConfig">The application configuration object which contains values
         /// for connecting to the specified GitHub repository.</param>
         /// <param name="privateKey"> The RSA private key of a registered GitHub app installed in the specified repository.</param>
-        /// <returns></returns>
+        /// <returns>A string value of the blob contents.</returns>
         public async Task<string> ReadRepositoryBlobContentAsync(ApplicationConfig appConfig, string privateKey)
         {
             if (appConfig == null)
