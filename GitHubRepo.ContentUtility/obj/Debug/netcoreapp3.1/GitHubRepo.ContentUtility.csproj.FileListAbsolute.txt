@@ -1,0 +1,9 @@
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\bin\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.deps.json
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\bin\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.dll
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\bin\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.pdb
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.csprojAssemblyReference.cache
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.AssemblyInfoInputs.cache
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.AssemblyInfo.cs
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.csproj.CoreCompileInputs.cache
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.dll
+C:\Users\irochand\OneDrive - Microsoft\Repos\GitHubRepo.ContentUtility\GitHubRepo.ContentUtility\obj\Debug\netcoreapp3.1\GitHubRepo.ContentUtility.pdb

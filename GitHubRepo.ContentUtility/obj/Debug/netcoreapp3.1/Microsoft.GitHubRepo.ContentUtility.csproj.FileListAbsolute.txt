@@ -1,0 +1,8 @@
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\bin\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.deps.json
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\bin\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.dll
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\bin\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.pdb
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\obj\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.AssemblyInfoInputs.cache
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\obj\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.AssemblyInfo.cs
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\obj\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.csproj.CoreCompileInputs.cache
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\obj\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.dll
+C:\Users\irochand\OneDrive - Microsoft\Repos\Microsoft.GitHubRepo.Writer\Microsoft.GitHubRepo.Writer\obj\Debug\netcoreapp3.1\Microsoft.GitHubRepo.ContentUtility.pdb
