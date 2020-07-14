@@ -11,9 +11,19 @@ using GitHubRepo.ContentUtility.Services;
 
 namespace GitHubRepo.ContentUtility.Operations
 {
-    public class FileContentReader
+    /// <summary>
+    /// Provides methods for reading the contents of a specific blob in a GitHub repository.
+    /// </summary>
+    public class BlobContentReader
     {
-        public async Task<string> ReadRepositoryFileContentAsync(ApplicationConfig appConfig, string privateKey)
+        /// <summary>
+        /// Reads the contents of a specified blob in the specified GitHub repository.
+        /// </summary>
+        /// <param name="appConfig">The application configuration object which contains values
+        /// for connecting to the specified GitHub repository.</param>
+        /// <param name="privateKey"> The RSA private key of a registered GitHub app installed in the specified repository.</param>
+        /// <returns></returns>
+        public async Task<string> ReadRepositoryBlobContentAsync(ApplicationConfig appConfig, string privateKey)
         {
             if (appConfig == null)
             {
@@ -33,7 +43,7 @@ namespace GitHubRepo.ContentUtility.Operations
                 // Get repo references
                 var references = await finalClient.Git.Reference.GetAll(appConfig.GitHubOrganization, appConfig.GitHubRepoName);
 
-                // Check if the reference branch is in the refs 
+                // Check if the reference branch is in the refs
                 var referenceBranch = references.Where(reference => reference.Ref == $"refs/heads/{appConfig.ReferenceBranch}").FirstOrDefault();
 
                 if (referenceBranch == null)

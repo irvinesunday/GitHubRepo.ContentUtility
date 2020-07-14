@@ -7,6 +7,9 @@ using static GitHubRepo.ContentUtility.Common.Enums;
 
 namespace GitHubRepo.ContentUtility.Common
 {
+    /// <summary>
+    /// Specifies the common property values required to connect to a specific GitHub repository.
+    /// </summary>
     public class ApplicationConfig
     {
         /// <summary>
@@ -50,7 +53,7 @@ namespace GitHubRepo.ContentUtility.Common
         public string FileContent { get; set; }
 
         /// <summary>
-        /// The commit message 
+        /// The commit message
         /// </summary>
         public string CommitMessage { get; set; }
 

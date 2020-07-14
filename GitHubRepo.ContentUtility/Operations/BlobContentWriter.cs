@@ -11,8 +11,18 @@ using GitHubRepo.ContentUtility.Services;
 
 namespace GitHubRepo.ContentUtility.Operations
 {
-    public class FileContentWriter
+    /// <summary>
+    /// Provides methods for writing contents to a specific blob in a GitHub repository.
+    /// </summary>
+    public class BlobContentWriter
     {
+        /// <summary>
+        /// Writes contents to a specified blob in the specified GitHub repository.
+        /// </summary>
+        /// <param name="appConfig">The application configuration object which contains values
+        /// for connecting to the specified GitHub repository.</param>
+        /// <param name="privateKey"> The RSA private key of a registered GitHub app installed in the specified repository.</param>
+        /// <returns></returns>
         public async Task WriteToRepositoryAsync(ApplicationConfig appConfig, string privateKey)
         {
             if (appConfig == null)
@@ -33,7 +43,7 @@ namespace GitHubRepo.ContentUtility.Operations
                 // Get repo references
                 var references = await finalClient.Git.Reference.GetAll(appConfig.GitHubOrganization, appConfig.GitHubRepoName);
 
-                // Check if the working branch is in the refs 
+                // Check if the working branch is in the refs
                 var workingBranch = references.Where(reference => reference.Ref == $"refs/heads/{appConfig.WorkingBranch}").FirstOrDefault();
 
                 // Check if branch already exists.
@@ -64,7 +74,7 @@ namespace GitHubRepo.ContentUtility.Operations
                     // Get the latest commit of this branch
                     var latestCommit = await finalClient.Git.Commit.Get(appConfig.GitHubOrganization, appConfig.GitHubRepoName,
                         masterReference.Object.Sha);
-                                        
+
                     // Create blob
                     NewBlob blob = new NewBlob { Encoding = EncodingType.Utf8, Content = appConfig.FileContent };
                     BlobReference blobRef =
@@ -75,8 +85,8 @@ namespace GitHubRepo.ContentUtility.Operations
 
                     // Add items based on blobs
                     tree.Tree.Add(new NewTreeItem
-                    { 
-                        Path = appConfig.FileContentPath, Mode = appConfig.TreeItemMode.ToString(), Type = TreeType.Blob, Sha = blobRef.Sha 
+                    {
+                        Path = appConfig.FileContentPath, Mode = appConfig.TreeItemMode.ToString(), Type = TreeType.Blob, Sha = blobRef.Sha
                     });
 
                     var newTree = await finalClient.Git.Tree.Create(appConfig.GitHubOrganization, appConfig.GitHubRepoName, tree);
@@ -115,7 +125,7 @@ namespace GitHubRepo.ContentUtility.Operations
             catch (Exception ex)
             {
                 throw ex;
-            }            
+            }
         }
     }
 }

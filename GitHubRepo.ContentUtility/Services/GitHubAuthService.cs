@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 
 namespace GitHubRepo.ContentUtility.Services
 {
+    /// <summary>
+    /// Provides methods for authenticating a GitHub app with a GitHub repository to
+    /// obtain a Jwt token for making calls to the respective repository.
+    /// </summary>
     public static class GitHubAuthService
     {
         private static readonly long TicksSince197011 = new DateTime(1970, 1, 1).Ticks;
@@ -60,7 +64,7 @@ namespace GitHubRepo.ContentUtility.Services
             catch (Exception ex)
             {
                 throw ex;
-            }            
+            }
         }
 
         private static long ToUtcSeconds(DateTime dt)

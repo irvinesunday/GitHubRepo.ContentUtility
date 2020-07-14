@@ -14,6 +14,9 @@ using System.Security.Cryptography;
 
 namespace GitHubRepo.ContentUtility.Helpers
 {
+    /// <summary>
+    /// Provides methods for extracting a private key and using it to encode a Jwt token.
+    /// </summary>
     public class JwtHelper
     {
         /// <summary>

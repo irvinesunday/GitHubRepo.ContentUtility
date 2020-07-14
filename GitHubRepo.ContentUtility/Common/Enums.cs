@@ -4,8 +4,14 @@
 
 namespace GitHubRepo.ContentUtility.Common
 {
+    /// <summary>
+    /// Provides a definition of commonly used enumerations.
+    /// </summary>
     public static class Enums
     {
+        /// <summary>
+        /// Enumeration of the supported file modes.
+        /// </summary>
         public enum TreeItemMode
         {
             Blob = 100644,
