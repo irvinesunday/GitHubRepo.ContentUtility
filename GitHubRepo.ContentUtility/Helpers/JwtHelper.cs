@@ -28,21 +28,17 @@ namespace GitHubRepo.ContentUtility.Helpers
         public static string CreateEncodedJwtToken(string key, Dictionary<string, object> payload)
         {
             // Generate JWT
-            using (var rsa = new RSACryptoServiceProvider())
-            {
-                var rsaParams = ToRSAParameters(GetPrivateKey(key));
-                rsa.ImportParameters(rsaParams);
-                return JWT.Encode(payload, rsa, JwsAlgorithm.RS256);
-            }
+            using var rsa = new RSACryptoServiceProvider();
+            var rsaParams = ToRSAParameters(GetPrivateKey(key));
+            rsa.ImportParameters(rsaParams);
+            return JWT.Encode(payload, rsa, JwsAlgorithm.RS256);
         }
         private static RsaPrivateCrtKeyParameters GetPrivateKey(string privateKey)
         {
-            using (var privateKeyReader = new StringReader(privateKey))
-            {
-                var pemReader = new PemReader(privateKeyReader);
-                var keyPair = (AsymmetricCipherKeyPair)pemReader.ReadObject();
-                return (RsaPrivateCrtKeyParameters)keyPair.Private;
-            }
+            using var privateKeyReader = new StringReader(privateKey);
+            var pemReader = new PemReader(privateKeyReader);
+            var keyPair = (AsymmetricCipherKeyPair)pemReader.ReadObject();
+            return (RsaPrivateCrtKeyParameters)keyPair.Private;
         }
 
         private static RSAParameters ToRSAParameters(RsaPrivateCrtKeyParameters privKey)
