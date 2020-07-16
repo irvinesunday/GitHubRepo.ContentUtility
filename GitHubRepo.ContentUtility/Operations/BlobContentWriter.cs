@@ -83,10 +83,12 @@ namespace GitHubRepo.ContentUtility.Operations
                     // Create new Tree
                     var tree = new NewTree { BaseTree = latestCommit.Tree.Sha };
 
+                    var treeMode = (int)appConfig.TreeItemMode;
+
                     // Add items based on blobs
                     tree.Tree.Add(new NewTreeItem
                     {
-                        Path = appConfig.FileContentPath, Mode = appConfig.TreeItemMode.ToString(), Type = TreeType.Blob, Sha = blobRef.Sha
+                        Path = appConfig.FileContentPath, Mode = treeMode.ToString(), Type = TreeType.Blob, Sha = blobRef.Sha
                     });
 
                     var newTree = await finalClient.Git.Tree.Create(appConfig.GitHubOrganization, appConfig.GitHubRepoName, tree);
@@ -104,7 +106,7 @@ namespace GitHubRepo.ContentUtility.Operations
 
                 // Create PR
                 var pullRequest = await finalClient.Repository.PullRequest.Create(appConfig.GitHubOrganization,
-                    appConfig.GitHubAppName,
+                    appConfig.GitHubRepoName,
                     new NewPullRequest(appConfig.PullRequestTitle, appConfig.WorkingBranch, appConfig.ReferenceBranch) { Body = appConfig.PullRequestBody });
 
                 // Add reviewers
