@@ -4048,11 +4048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v-irsund\\Desktop\\LABS\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
+      "projectUniqueName": "C:\\Users\\v-irsund\\Desktop\\LABS\\msgraph-permissions-scraper\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
       "projectName": "GitHubRepo.ContentUtility",
-      "projectPath": "C:\\Users\\v-irsund\\Desktop\\LABS\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
+      "projectPath": "C:\\Users\\v-irsund\\Desktop\\LABS\\msgraph-permissions-scraper\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
       "packagesPath": "C:\\Users\\v-irsund\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v-irsund\\Desktop\\LABS\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\obj\\",
+      "outputPath": "C:\\Users\\v-irsund\\Desktop\\LABS\\msgraph-permissions-scraper\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

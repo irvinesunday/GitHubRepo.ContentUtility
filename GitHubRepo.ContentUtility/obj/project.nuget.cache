@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3bD3J2rO8G2iWivx7RzdUdFloFPghjjI+39UGCJXyTZOat8jw6EfyzxCoZ/gZLrnlBMFJF2ph26ztXtBcnQOUQ==",
+  "dgSpecHash": "uqldvfzyI+VpnIKAsZenXwwahM/oIb+tLBf17rZhvps4eHbsXh6glzM44YyDvDDgKFkYWB/D5Cn2xrg/tM4UrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\v-irsund\\Desktop\\LABS\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
+  "projectFilePath": "C:\\Users\\v-irsund\\Desktop\\LABS\\msgraph-permissions-scraper\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility\\GitHubRepo.ContentUtility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\v-irsund\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\v-irsund\\.nuget\\packages\\githubjwt\\0.0.4\\githubjwt.0.0.4.nupkg.sha512",
